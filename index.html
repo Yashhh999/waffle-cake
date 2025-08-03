@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffle Making Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Monovalent Kitchen</h1>
+            <ul>
+                <li><a href="index.html" class="active">Waffles</a></li>
+                <li><a href="cake.html">Cakes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>How to Make Perfect Waffles</h2>
+                        <div class="image-slider">
+                <div class="slider-container">
+                    <img class="slider-image active" src="assets/Coffee-Syrup-_-Waffles-1.jpg" alt="Coffee Syrup Waffles">
+                    <img class="slider-image" src="assets/chocolate-chip-waffles-featured.jpg" alt="Chocolate Chip Waffles">
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn">❮</button>
+                    <button class="slider-btn next-btn">❯</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="ingredients">
+            <h3>Ingredients</h3>
+            <form id="ingredientForm">
+                <label for="servings">Number of servings:</label>
+                <input type="number" id="servings" min="1" max="10" value="4">
+                <button type="button" id="calculateBtn">Calculate Ingredients</button>
+            </form>
+            
+            <ul id="ingredientList">
+                <li>2 cups flour</li>
+                <li>2 tablespoons sugar</li>
+                <li>2 teaspoons baking powder</li>
+                <li>1/2 teaspoon salt</li>
+                <li>2 eggs</li>
+                <li>1 3/4 cups milk</li>
+                <li>1/2 cup melted butter</li>
+            </ul>
+        </section>
+
+        <section class="steps">
+            <h3>Cooking Steps</h3>
+            <div class="step-counter">
+                <p>Step <span id="currentStep">1</span> of 6</p>
+                <button id="prevStep">Previous</button>
+                <button id="nextStep">Next</button>
+            </div>
+            
+            <div id="stepContent" class="step-content">
+                <p>Mix all dry ingredients in a large bowl.</p>
+            </div>
+        </section>
+
+        <section class="timer">
+            <h3>Cooking Timer</h3>
+            <div class="timer-display">
+                <span id="timerDisplay">3:00</span>
+            </div>
+            <button id="startTimer">Start 3-minute Timer</button>
+            <button id="resetTimer">Reset</button>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/Yashhh999/waffle-cake">Made By Yash</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

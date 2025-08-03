@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Making Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Monovalent Kitchen</h1>
+            <ul>
+                <li><a href="index.html">Waffles</a></li>
+                <li><a href="cake.html" class="active">Cakes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>How to Make Amazing Vanilla Cake</h2>
+            <div class="image-slider">
+                <div class="slider-container">
+                    <img class="slider-image active" src="assets/cake.jpeg" alt="Delicious Cake">
+                    <img class="slider-image" src="assets/Chocolate_Cake_05.webp" alt="Chocolate Cake">
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn">❮</button>
+                    <button class="slider-btn next-btn">❯</button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="difficulty">
+            <h3>Recipe Difficulty</h3>
+            <div class="difficulty-selector">
+                <button class="difficulty-btn" data-level="easy">Easy</button>
+                <button class="difficulty-btn" data-level="medium">Medium</button>
+                <button class="difficulty-btn" data-level="hard">Hard</button>
+            </div>
+            <div id="difficultyInfo" class="info-box">
+                <p>Select a difficulty level to see recipe details!</p>
+            </div>
+        </section>
+
+        <section class="flavor">
+            <h3>Cake Flavor Mixer</h3>
+            <div class="flavor-inputs">
+                <label for="flavorInput">Type your favorite flavor:</label>
+                <input type="text" id="flavorInput" placeholder="vanilla">
+                <div id="flavorPreview" class="flavor-preview">
+                    Your flavor: <span id="flavorDisplay">vanilla</span> cake
+                </div>
+            </div>
+        </section>
+
+        <section class="decoration">
+            <h3>Cake Decoration</h3>
+            <div class="decoration-controls">
+                <button id="changeColor">Change Cake Color</button>
+                <button id="addSprinkles">Add Sprinkles</button>
+                <button id="resetCake">Reset Decoration</button>
+            </div>
+            <div id="cakeDecoration" class="cake-visual">
+                <div class="cake-base">🎂</div>
+            </div>
+        </section>
+
+        <section class="baking-tips">
+            <h3>Baking Tips</h3>
+            <div class="tips-container">
+                <button id="tipButton">Get Random Tip</button>
+                <div id="tipDisplay" class="tip-box">
+                    <p>Click the button above to get helpful baking tips!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/Yashhh999/waffle-cake">Made By Yash</a>
+    </footer>
+
+    <script src="cake.js"></script>
+</body>
+</html>

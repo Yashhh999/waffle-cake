@@ -1,344 +1,252 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff5f8;
-    color: #333;
-    line-height: 1.6;
+    font-family: Arial;
+    background: linear-gradient(to bottom, pink, lightpink);
+    color: black;
 }
 
 header {
-    background: linear-gradient(135deg, #ffb6c1, #ffc0cb);
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: linear-gradient(to right, lightpink, hotpink);
+    padding: 20px;
 }
 
 nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 nav h1 {
     color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: 24px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+}
+
+nav li {
+    margin-left: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    transition: background-color 0.3s;
+    padding: 10px;
+    background-color: hotpink;
 }
 
-nav a:hover, nav a.active {
-    background-color: rgba(255,255,255,0.2);
+nav a:hover {
+    background-color: deeppink;
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    padding: 20px;
 }
 
 section {
     background: white;
-    margin: 2rem 0;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border: 2px solid #ffc0cb;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid pink;
 }
 
 h2, h3 {
-    color: #d1477a;
-    margin-bottom: 1rem;
+    color: purple;
 }
 
 .hero {
     text-align: center;
-    background: linear-gradient(45deg, #ffe4e1, #ffd1dc);
+    background-color: lightblue;
 }
 
 .image-slider {
-    position: relative;
-    max-width: 400px;
-    margin: 2rem auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 20px auto;
 }
 
 .slider-container {
-    position: relative;
     width: 100%;
-    height: 250px;
+    height: 200px;
 }
 
 .slider-image {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    border-radius: 10px;
+    display: none;
 }
 
 .slider-image.active {
-    opacity: 1;
+    display: block;
 }
 
 .slider-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 10px;
 }
 
 .slider-btn {
-    background: rgba(209, 71, 122, 0.8);
-    color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    background: pink;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 0 5px;
     cursor: pointer;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slider-btn:hover {
-    background: rgba(209, 71, 122, 1);
-    transform: scale(1.1);
 }
 
 .slider-dots {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 10px;
+    background: gray;
+    display: inline-block;
+    margin: 0 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid rgba(209, 71, 122, 0.3);
 }
 
 .dot.active {
-    background: #d1477a;
-    border-color: #d1477a;
-    transform: scale(1.2);
-}
-
-.dot:hover {
-    background: rgba(209, 71, 122, 0.7);
-    transform: scale(1.1);
-}
-
-.ingredients form {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
+    background: black;
+}.ingredients form {
+    margin-bottom: 20px;
 }
 
 .ingredients label {
     font-weight: bold;
-    color: #d1477a;
+    color: blue;
 }
 
 .ingredients input {
-    padding: 0.5rem;
-    border: 2px solid #ffc0cb;
-    border-radius: 5px;
-    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid gray;
+    margin: 0 10px;
 }
 
 button {
-    background: linear-gradient(135deg, #ff69b4, #ffc0cb);
-    color: white;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    border-radius: 25px;
+    background: yellow;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-button:active {
-    transform: translateY(0);
+    background: orange;
 }
 
 .ingredients ul {
     list-style: none;
-    padding-left: 0;
 }
 
 .ingredients li {
-    background: #ffe4e1;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem 0;
-    border-radius: 10px;
-    border-left: 4px solid #ff69b4;
+    background: lightyellow;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid gray;
 }
 
 .step-counter {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .step-content {
-    background: #ffe4e1;
-    padding: 1.5rem;
-    border-radius: 10px;
-    font-size: 1.1rem;
+    background: lightgray;
+    padding: 20px;
+    border: 1px solid black;
     min-height: 100px;
-    display: flex;
-    align-items: center;
 }
 
 .timer-display {
     text-align: center;
-    margin: 1rem 0;
+    margin: 20px 0;
 }
 
 #timerDisplay {
-    font-size: 3rem;
-    color: #d1477a;
-    background: #ffe4e1;
-    padding: 1rem 2rem;
-    border-radius: 15px;
+    font-size: 48px;
+    color: red;
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
     display: inline-block;
-    font-weight: bold;
-    border: 3px solid #ffc0cb;
 }
 
 footer {
-    background: #d1477a;
+    background: purple;
     color: white;
     text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .difficulty-selector {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .difficulty-btn {
-    background: linear-gradient(135deg, #ffc0cb, #ffe4e1);
-    color: #d1477a;
-    border: 2px solid #ffc0cb;
+    background: lightgreen;
+    color: black;
+    border: 1px solid black;
+    margin-right: 10px;
 }
 
 .difficulty-btn.selected {
-    background: linear-gradient(135deg, #ff69b4, #ffc0cb);
+    background: green;
     color: white;
 }
 
 .info-box {
-    background: #ffe4e1;
-    padding: 1rem;
-    border-radius: 10px;
-    border-left: 4px solid #ff69b4;
+    background: lightyellow;
+    padding: 15px;
+    border: 1px solid orange;
 }
 
 .flavor-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    margin-bottom: 20px;
 }
 
 .flavor-inputs label {
     font-weight: bold;
-    color: #d1477a;
+    color: brown;
 }
 
 .flavor-inputs input {
-    padding: 0.7rem;
-    border: 2px solid #ffc0cb;
-    border-radius: 10px;
-    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 200px;
+    margin-top: 10px;
 }
 
 .flavor-preview {
-    background: #ffe4e1;
-    padding: 1rem;
-    border-radius: 10px;
-    font-size: 1.2rem;
+    background: lightcyan;
+    padding: 15px;
+    border: 1px solid blue;
+    margin-top: 10px;
     text-align: center;
 }
 
 #flavorDisplay {
     font-weight: bold;
-    color: #d1477a;
-    text-transform: capitalize;
+    color: darkblue;
 }
 
 .decoration-controls {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .cake-visual {
     text-align: center;
-    padding: 2rem;
-    background: #ffe4e1;
-    border-radius: 15px;
+    padding: 30px;
+    background: lightyellow;
+    border: 2px solid black;
     min-height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .cake-base {
-    font-size: 5rem;
-    transition: all 0.3s ease;
+    font-size: 80px;
 }
 
 .tips-container {
@@ -346,96 +254,10 @@ footer {
 }
 
 .tip-box {
-    background: #ffe4e1;
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin-top: 1rem;
-    border-left: 4px solid #ff69b4;
+    background: lightgreen;
+    padding: 20px;
+    border: 1px solid green;
+    margin-top: 15px;
     min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    main {
-        padding: 1rem;
-    }
-    
-    .ingredients form,
-    .step-counter,
-    .difficulty-selector,
-    .decoration-controls {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-    
-    .image-slider {
-        max-width: 100%;
-        margin: 1rem auto;
-    }
-    
-    .slider-container {
-        height: 200px;
-    }
-    
-    .slider-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
-    }
-    
-    .slider-controls {
-        padding: 0 5px;
-    }
-    
-    .dot {
-        width: 10px;
-        height: 10px;
-    }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-.timer-active {
-    animation: pulse 1s infinite;
-}
-
-section:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-}
-
-.ingredients li:hover {
-    background: #ffd1dc;
-    transform: translateX(10px);
-    transition: all 0.3s ease;
-}
-
-.sprinkles {
-    position: relative;
-}
-
-.sprinkles::after {
-    content: "✨🌟✨";
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.5rem;
-}
